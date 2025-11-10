@@ -74,7 +74,7 @@ const CurrencySwap = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-lg text-gray-600">Đang tải dữ liệu...</div>
+        <div className="text-lg text-gray-600">Loading data...</div>
       </div>
     );
   }
@@ -87,14 +87,14 @@ const CurrencySwap = () => {
             Currency Swap
           </h1>
           <p className="text-gray-600">
-            Chuyển đổi tiền tệ nhanh chóng và dễ dàng
+            Quickly and easily convert currencies
           </p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700">
-              Từ
+              From
             </label>
             <div className="relative">
               <input
@@ -142,7 +142,7 @@ const CurrencySwap = () => {
 
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700">
-              Đến
+              To
             </label>
             <div className="relative">
               <input
@@ -183,7 +183,7 @@ const CurrencySwap = () => {
           {fromAmount && (
             <div className="mt-6 p-4 bg-blue-50 rounded-xl">
               <div className="text-sm text-gray-600">
-                Tỷ giá chuyển đổi
+                Exchange rate
               </div>
               <div className="text-lg font-semibold text-gray-800 mt-1">
                 1 {fromCurrency} ≈ {
@@ -195,12 +195,12 @@ const CurrencySwap = () => {
           )}
 
           <button className="w-full py-4 bg-linear-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg">
-            Thực hiện Swap
+            Execute Swap
           </button>
         </div>
 
         <div className="mt-6 text-center text-sm text-gray-500">
-          <p className="mt-1">Tổng số currencies: {currencies.length}</p>
+          <p className="mt-1">Total currencies: {currencies.length}</p>
         </div>
       </div>
     </div>
